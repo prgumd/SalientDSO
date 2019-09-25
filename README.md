@@ -106,6 +106,8 @@ After cloning, just run ```git submodule update --init``` to include this. It tr
 
 #### 4.2.2. Building
 Test if the original DSO setting works first. Compile using ```USE_SALIENCY_SAMPLING=false``` in ```setting.h``` and build using the following instructions.
+
+```
 cd dso
 mkdir build
 cd build
