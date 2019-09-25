@@ -8,7 +8,7 @@ This is the accompanying source code for the paper **[SalientDSO: Bringing atten
 **The dataset will be published soon.**
 
 
-## 1. Video
+## 2. Video
 
 
 ## 3. Citation
