@@ -9,7 +9,7 @@ This is the accompanying source code for the paper **[SalientDSO: Bringing atten
 
 
 ## 2. Video
-
+[![ SalientDSO: Bringing attention to Direct Sparse Odometry](assets/Video.PNG)](https://www.youtube.com/watch?v=JQnF_yYk0wI)
 
 ## 3. Citation
 If you use this for your research please cite:
