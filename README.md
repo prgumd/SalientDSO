@@ -5,8 +5,6 @@ Bringing attention to Direct Sparse Odometry
 ## 1. What?
 This is the accompanying source code for the paper **[SalientDSO: Bringing attention to Direct Sparse Odometry](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8671715)** published in IEEE Transactions in Autonmation Science and Engineering. Visit our [project page](http://prg.cs.umd.edu/SalientDSO) for more details.
 
-**The dataset will be published soon.**
-
 
 ## 2. Video
 [![ SalientDSO: Bringing attention to Direct Sparse Odometry](assets/Video.PNG)](https://www.youtube.com/watch?v=JQnF_yYk0wI)
@@ -191,11 +189,35 @@ there are many command line options available, see `main_dso_pangolin.cpp`. some
 - `points=XXX` : set the path to the output 3D point cloud(sampleoutput has to be set to 1)
 
 
-## Authors
+## 6. CVL Dataset and other datasets with saliency and scene parsing outputs
+The CVL dataset can be downloaded from [here](https://drive.google.com/file/d/1u5-jbQl6igESv0L05E5TTwLBeGnE807b/view?usp=sharing). It contains the following directory structure once extracted.
 
-- **Huai-Jen Liang**
 
+```
+CVL
+├── 01 
+|   ├── images
+|   |	└── *.png
+|   ├── saliency
+|   |	└── *.jpg
+|   ├── segmentations
+|   |	└── *.png
+|   ├── camera.txt
+|   └── times.txt
+└── 02
+    ├── images
+    |	└── *.png
+    ├── saliency
+    |	└── *.jpg
+    ├── segmentations
+    | 	└── *.png
+    ├── camera.txt
+    └── times.txt
 
-## Acknowledgments
+```
+
+**The saliency and scene parsing outputs for TUM-Mono and ICL-NIUM datasets are coming soon.**
+
+## 7. Acknowledgments
 
 We would like to thank the authors of [DSO](https://github.com/JakobEngel/dso) on which this code is based on.
