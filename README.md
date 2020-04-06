@@ -131,7 +131,7 @@ build/bin/dso_dataset files=$DATASETPATH/images.zip calib=$DATASETPATH/camera.tx
 ```
 
 #### 5.2. Test Saliency Setting
-Recompile using ```USE_SALIENCY_SAMPLING=true``` in ```setting.h``` to use this functionality. First install SalGAN from [here](https://github.com/imatge-upc/salgan) and run it on your dataset. Store the saliency images in ```.png``` format in a folder. **These instructions will be posted soon.**
+Recompile using ```USE_SALIENCY_SAMPLING=true``` in ```setting.h``` to use this functionality. First install SalGAN from [here](https://github.com/imatge-upc/salgan) and run it on your dataset. Store the saliency images in ```.png``` format in a folder.
 
 
 Run on a dataset from [https://vision.in.tum.de/mono-dataset](https://vision.in.tum.de/mono-dataset) using (this assumes that the saliency files are stored in the dataset in ```DATASETFOLDER/saliency/``` folder).
@@ -145,7 +145,7 @@ build/bin/dso_dataset files=$DATASETPATH/images.zip calib=$DATASETPATH/camera.tx
 
 
 #### 5.3. Test Semantic Filtered Saliency Setting (SalientDSO's proposed approach)
-Recompile using ```USE_SALIENCY_SAMPLING=true``` in ```setting.h``` to use this functionality. First install SalGAN from [here](https://github.com/imatge-upc/salgan) and run it on your dataset. Store the saliency images in ```.png``` format in a folder. Also, run scene parsing using PSPNet from [here](https://github.com/hellochick/PSPNet-tensorflow) and run it on your dataset. Store the saliency images in ```.png``` format in a folder. **These instructions will be posted soon.** 
+Recompile using ```USE_SALIENCY_SAMPLING=true``` in ```setting.h``` to use this functionality. First install SalGAN from [here](https://github.com/imatge-upc/salgan) and run it on your dataset. Store the saliency images in ```.png``` format in a folder. Also, run scene parsing using PSPNet from [here](https://github.com/hellochick/PSPNet-tensorflow) and run it on your dataset. Store the saliency images in ```.png``` format in a folder. One can write a simple shell script around the provided [inference code](https://github.com/hellochick/PSPNet-tensorflow/blob/master/inference.py) to run on the entire dataset. For people with experience in tensorflow, the original python code can be modified accordingly. 
 
 Run on a dataset from [https://vision.in.tum.de/mono-dataset](https://vision.in.tum.de/mono-dataset) using (this assumes that the saliency files are stored in the dataset folder in ```DATASETFOLDER/saliency/``` folder and scene parsing is stored in the dataset folder ```DATASETFOLDER/segmentation```).
 
@@ -157,7 +157,7 @@ build/bin/dso_dataset files=DATASETPATH/images.zip calib=DATASETPATH/camera.txt 
 ```
 
 #### 5.4. Running on CVL-UMD dataset
-Download the dataset from [here](). Recompile using ```USE_SALIENCY_SAMPLING=true``` in ```setting.h``` to use this functionality. Run using the following instructions. 
+Download the dataset from [here](https://drive.google.com/file/d/1u5-jbQl6igESv0L05E5TTwLBeGnE807b/view?usp=sharing). Recompile using ```USE_SALIENCY_SAMPLING=true``` in ```setting.h``` to use this functionality. Run using the following instructions. 
 
 ```
 DATASETPATH=Path to your dataset
@@ -215,8 +215,6 @@ CVL
     └── times.txt
 
 ```
-
-**The saliency and scene parsing outputs for TUM-Mono and ICL-NIUM datasets are coming soon.**
 
 ## 7. Acknowledgments
 
